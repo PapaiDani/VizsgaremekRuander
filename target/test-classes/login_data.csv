@@ -1,0 +1,5 @@
+TestName,Email,Password,ExpectedMessage
+Helyes adatok,admin@vizsga.hu,TitkosJelszo123,Your account
+Jo email rossz jelszo,admin@vizsga.hu,RosszJelszo123,Authentication failed
+Rossz email jo jelszo,nincsilyen01@vizsga.hu,TitkosJelszo123,Authentication failed
+Nem letezo email jelszo,nincsenilyen02@viszga.hu,RosszJelszo456,Authentication failed

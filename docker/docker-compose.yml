@@ -1,0 +1,34 @@
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=prestashop
+      - MYSQL_USER=prestashop
+      - MYSQL_PASSWORD=prestashop
+    volumes:
+      - db_data:/var/lib/mysql
+
+  prestashop:
+    image: prestashop/prestashop:9.0.3-apache
+    ports:
+      - "80:80"
+    environment:
+      - DB_SERVER=db
+      - DB_USER=prestashop
+      - DB_PASSWD=prestashop
+      - DB_NAME=prestashop
+      - PS_INSTALL_AUTO=1
+      - PS_DOMAIN=localhost
+      #- PS_FOLDER_ADMIN=admin_vizsga
+      #- PS_FOLDER_INSTALL=install_torolve
+      - ADMIN_MAIL=admin@vizsga.hu
+      - ADMIN_PASSWD=VizsgaJelszo123
+    depends_on:
+      - db
+    volumes:
+      - prestashop_data:/var/www/html
+
+volumes:
+  db_data:
+  prestashop_data:
