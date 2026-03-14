@@ -37,7 +37,7 @@ public class BasePage {
 		public BasePage(WebDriver driver) {  
 			this.driver = driver;
 			//Inicializáljuk a wait objektumot (maximum 10 másodpercet fog várni, de ha 1 mp alatt megvan az elem, azonnal továbbmegy)
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // GitHub szerver miatt megnövelt várakoztatás. 
 		}
 	
 	/**
