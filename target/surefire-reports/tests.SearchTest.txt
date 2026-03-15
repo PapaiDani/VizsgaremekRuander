@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: tests.SearchTest
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 13.33 s <<< FAILURE! -- in tests.SearchTest
-tests.SearchTest.dataDrivenSearchTest(String, String)[7] -- Time elapsed: 1.102 s <<< FAILURE!
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 13.25 s <<< FAILURE! -- in tests.SearchTest
+tests.SearchTest.dataDrivenSearchTest(String, String)[7] -- Time elapsed: 1.123 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matches were found') nem jelent meg. ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -143,7 +143,7 @@ org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matc
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-tests.SearchTest.dataDrivenSearchTest(String, String)[8] -- Time elapsed: 1.068 s <<< FAILURE!
+tests.SearchTest.dataDrivenSearchTest(String, String)[8] -- Time elapsed: 1.069 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matches were found') nem jelent meg. ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -284,7 +284,7 @@ org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matc
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-tests.SearchTest.dataDrivenSearchTest(String, String)[9] -- Time elapsed: 1.132 s <<< FAILURE!
+tests.SearchTest.dataDrivenSearchTest(String, String)[9] -- Time elapsed: 1.170 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matches were found') nem jelent meg. ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -425,7 +425,7 @@ org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matc
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-tests.SearchTest.dataDrivenSearchTest(String, String)[10] -- Time elapsed: 1.088 s <<< FAILURE!
+tests.SearchTest.dataDrivenSearchTest(String, String)[10] -- Time elapsed: 1.076 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: Hiba a keresésnél! A várt szöveg ('matches were  found') nem jelent meg. ==> expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

@@ -51,7 +51,8 @@ class DataModificationTest extends BaseTest {
 		// 2. Bejelentkezés és navigáció a címek listájához
 		homePage.open();
 		homePage.clickSignIn();
-		loginPage.login("admin@vizsga.hu", "TitkosJelszo123");
+		loginPage.login("modositas@vizsga.hu", "TitkosJelszo123");
+		Assertions.assertTrue(homePage.isSignInButtonVisible(), "Kritikus hiba: A robot nem tudott bejelentkezni a módosításhoz!");
 		addressPage.openNewAddresses();
 		addressPage.clickUpdateFirstAddress();
 		

@@ -112,6 +112,9 @@ class EndtoEndTest extends BaseTest {
             } else {
                 productsPage.addProductAndContinueShopping(); 
           }
+            // Megvárjuk, amíg a felugró ablak animációja teljesen befejeződik, 
+            // különben a következő driver.get() "összeakadhat" a böngészővel.
+            Thread.sleep(2000);
       }
         
         // 7. rendelés véglegesítése

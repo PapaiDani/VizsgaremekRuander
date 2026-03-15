@@ -58,7 +58,7 @@ public class AddressPage extends BasePage {
 	 */
 	@Step("New address oldal megnyitása")
 	public void openNewAddresses() { 
-		driver.get("http://localhost/addresses");
+		driver.get("http://localhost/index.php?controller=addresses");
 	}
 	
 	

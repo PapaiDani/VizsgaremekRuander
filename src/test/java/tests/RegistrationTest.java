@@ -40,11 +40,12 @@ public class RegistrationTest extends BaseTest{
      * 3. Regisztrációs űrlap kitöltése dinamikusan generált érvényes adatokkal. 
      * 4. Adatvédelmi és ÁSZF elfogadása és mentés. 
      * Elvárt eredmény: A felhasználó sikeresen belép, majd a fejlécben megjelenik a neve.
+	 * @throws InterruptedException 
      */
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("TC-1.1.: A felhasználó sikeresen regisztrál a rendszerbe érvényes adatokkal és a GDPR elfogadásával.")
-    void RegistrationPositiveTest() {
+    void RegistrationPositiveTest() throws InterruptedException {
     	
     	
     // 1. Oldal objektumok példányosítása
@@ -85,6 +86,8 @@ public class RegistrationTest extends BaseTest{
     registrationPage.registration(firstName, lastName, uniqueEmail, password, formattedBirthDate);
     registrationPage.acceptPrivacyAndTerms();
     registrationPage.clickSaveButton();
+    // Rövid szünet a szerver terhelésének áthidalására a tömeges futtatás során
+    Thread.sleep(2000);
     
     //5. Ellenőrzés: Sikeres regisztráció után a fejlécben meg kell jelennie a névnek
     String actualLoggedInName = homePage.getLoggedInUserName();
