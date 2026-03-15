@@ -19,7 +19,7 @@ jobs:
           echo "Várakozás a PrestaShop betöltésére..."   
           sleep 240
           echo "Teszt adatok feltöltése"
-          cat docker/full_clone.sql | docker exec -i docker-db-1 mysql -u root -padmin prestashop
+          cat docker/full_cloneV2.sql | docker exec -i docker-db-1 mysql -u root -padmin prestashop
 
       - name: Set up JDK 21
         uses: actions/setup-java@v4
