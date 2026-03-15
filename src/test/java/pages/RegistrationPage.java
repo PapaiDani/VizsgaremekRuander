@@ -46,7 +46,6 @@ public class RegistrationPage extends BasePage {
     * Végighalad a szükséges beviteli mezőkön a BasePage.type() metódus segítségével. 
     * Külön paraméterekként veszi át az űrlap sorait.
     */
-	
 	@Step("Regisztrációs űrlap kitöltése: Név: {0} {1}, Email: {2}")
 	public void registration(String firstName, String lastName, String email, String password, String birthdate) {
 		type(firstNameField, firstName);
@@ -62,7 +61,6 @@ public class RegistrationPage extends BasePage {
 	@Step("Bepipálja a Social title boxot")
 	public void acceptSocialTitle() {
 		click(socialTitleMr);
-		
 	}
 	
 	/**
@@ -78,7 +76,6 @@ public class RegistrationPage extends BasePage {
 	/**
 	 * Rákattint a Save gombra.
 	 */
-	
 	@Step("Kattintás a Save gombra a regisztráció véglegesítéséhez")
 	public void clickSaveButton() {
 		click(saveButton);

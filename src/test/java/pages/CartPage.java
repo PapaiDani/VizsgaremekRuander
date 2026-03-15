@@ -13,7 +13,7 @@ import io.qameta.allure.Step;
 public class CartPage extends BasePage {
 	
 	
-	// Lokátorok a kosár kezeléséehez
+	// Lokátorok a kosár kezeléséhez
 	private By deleteIcon = By.cssSelector(".remove-from-cart");
 	private By noItemsMessage = By.cssSelector(".no-items");
 	
@@ -42,7 +42,6 @@ public class CartPage extends BasePage {
 	 */
 	@Step("Üres kosár üzenet lekérdezése")
     public String getEmptyCartMessage() {
- 
         return getText(noItemsMessage);
     }
 	

@@ -67,7 +67,7 @@ class DataExtractionTest extends BaseTest {
             
             // Lokális keresés! 
             // Itt a 'currentBox.findElement()' metódust használjuk a 'driver.findElement()' helyett!
-            // Így a Selenium csakis az aktuális, pici HTML dobozon belül keresi a címet és az árat, 
+            // Így a Selenium csakis az aktuális, HTML dobozon belül keresi a címet és az árat, 
             // megelőzve azt, hogy a gép összekeverje a különböző termékek adatait.
             String productName = currentBox.findElement(By.cssSelector(".product-title a")).getText();
             String productPrice = currentBox.findElement(By.cssSelector(".price")).getText();

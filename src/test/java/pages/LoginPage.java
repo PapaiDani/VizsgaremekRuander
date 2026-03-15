@@ -80,6 +80,4 @@ public class LoginPage extends BasePage{
 	public String bodyMessage() {
 		return getText(body);
 	}
-	
-
 }

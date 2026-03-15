@@ -40,7 +40,6 @@ public class ProductsPage extends BasePage {
 		driver.get("http://localhost/2-home");
 	}
 	
-	
 	/**
      * Kosárba teszi a terméket, megvárja a felugró ablakot, majd átnavigál a kosárba.
      * Egymás után hívja meg a BasePage click() metódusait.
@@ -80,8 +79,6 @@ public class ProductsPage extends BasePage {
         
         // 2. Betesszük az összes talált elemet egy Java Listába
         List<WebElement> products = driver.findElements(allProductsLocator);
-        
-        System.out.println("     [DEBUG] Talált termékek száma a felületen: " + products.size());
         
         // 3. Biztonsági ellenőrzés: Van egyáltalán ennyi termék?
         if (products.size() < index) {

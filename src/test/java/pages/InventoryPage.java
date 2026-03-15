@@ -50,6 +50,4 @@ public class InventoryPage extends BasePage {
 	public void openCart() {
 		click(cartIcon);
 	}
-	
-	
 }

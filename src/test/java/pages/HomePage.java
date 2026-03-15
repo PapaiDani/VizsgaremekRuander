@@ -73,7 +73,6 @@ public class HomePage extends BasePage {
 	 * Lekérdezi a bejelentkezett felhasználó nevét a fejlécből
 	 * @return a felhasználó neve Stringként. 
 	 */
-	
 	@Step("A bejelentkezett felhasználó nevének lekérdezése a fejlécből")
 	public String getLoggedInUserName() {
 		return getText(loggedInUserName);
@@ -121,7 +120,6 @@ public class HomePage extends BasePage {
      */
 	@Step("Keresés indítása a globális keresőben a következő szóra: '{keyword}'")
 	public SearchResultPage searchFor (String keyword) {
-		
 		WebElement searchBox = find(search);
 		
 		// Biztonsági törlés gépelés előtt

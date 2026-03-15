@@ -83,7 +83,7 @@ public class AddressPage extends BasePage {
 	/**
      * Állam kiválasztása a legördülő menüből.
      * Csak akkor jelenik meg ez a mező, ha bizonyos országokat (pl. US) választunk,
-     * emiatt a beépített explicit várakozás (find() metódus) kötelező az elem megtalálásához.
+     * emiatt a beépített explicit várakozás (find() metódus) fontos az elem megtalálásához.
      * @param stateName A kiválasztandó állam neve.
 	 */
 	@Step("Állam kiválasztása: {stateName}")
